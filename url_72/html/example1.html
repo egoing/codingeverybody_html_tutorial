@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+		<style>
+			img{
+				height:50px;
+				width:50px;
+			}
+			body{
+				font-size:0.8em;
+			}
+			table {
+				border-collapse: collapse;
+			}
+			td, th{
+				border:1px solid gray;
+				padding:5px;
+			}
+			textarea{
+				border:none;
+			}
+		</style>
+	</head>
+	<body>
+		exampe1.html 파일이
+		<table>
+			<tr>
+				<th>구분</th>
+				<th>기호</th>
+				<th>설명</th>
+				<th>코드</th>
+				<th>결과</th>
+			</tr>
+			<tr>
+				<td rowspan="3">상대경로</td>
+				<td>../</td>
+				<td>부모 디렉토리</td>
+				<td>
+					<textarea><img src="../image/logo.png" /></textarea>
+				</td>
+				<td>
+					<img src="../image/logo.png" />
+				</td>
+			</tr>
+			<tr>
+				<td>./</td>
+				<td>현재 디렉토리</td>
+				<td>
+					<textarea><img src="./image/logo.png" /></textarea>
+				</td>
+				<td>
+					<img src="./image/logo.png" />
+				</td>
+			</tr>
+			
+			<tr>
+				<td>없음</td>
+				<td>현재 디렉토리 기호는 생략할 수 있다</td>
+				<td>
+					<textarea><img src="image/logo.png" /></textarea>
+				</td>
+				<td>
+					<img src="image/logo.png" />
+				</td>
+			</tr>
+			<tr>
+				<td rowspan="2">절대경로</td>
+				<td>/</td>
+				<td>루트(root) 디렉토리</td>
+				<td>
+					<textarea><img src="/html_tutorials/codingeverybody_html_tutorial/image/logo.png" /></textarea>
+				</td>
+				<td>
+					<img src="/html_tutorials/codingeverybody_html_tutorial/image/logo.png" />
+				</td>
+			</tr>
+			<tr>
+				<td>URL</td>
+				<td>URL을 사용</td>
+				<td>
+					<textarea><img src="http://codingeverybody.com/html_tutorials/codingeverybody_html_tutorial/image/logo.png" /></textarea>
+				</td>
+				<td>
+					<img src="http://codingeverybody.com/html_tutorials/codingeverybody_html_tutorial/image/logo.png" />
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
